@@ -1,181 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    color:black;
-}
-
-.header-container {
-    height: 100vh;
-    width: 100vw;
-    background-color: #c98496;
-    background-image: url('./img/background.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     box-sizing: border-box;
-    padding: 0 112px;
-    position: relative;
-}
-
-h1 {
-    font-size: 50px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-h2 {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-.social-media {
-    margin-top: 1rem;
-    display: flex;
-}
-
-.social-media a {
     text-decoration: none;
-    color: black;
-    padding: 1rem 4rem;
-    border: 1px solid #1E1E2A;
-    min-width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s ease-in-out;
 }
-
-a:hover {
-    background-color: #ffffff;
+.max-width{
+    max-width: 1300px;
+    padding:  0 80px;
+    margin: auto;
 }
-
-/*menu hamburger */
-
-.checkbox-container {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.checkbox {
-height: 100px;
-width: 100px;
-position: absolute;
-right: 0;
-top: 0;
-display: flex;
-justify-content: center;
-cursor: pointer;
-z-index: 9999;
-transition: 400ms ease-in-out 0s;
-}
-
-.checkbox .trace {
-    width: 50px;
-    height: 2px;
-    background-color: #1E1E2A;
-    position: absolute;
-    border-radius: 4px;
-    transition: 0.5s ease-in-out;
-}
-
-.checkbox .trace:nth-child(1) {
-    top: 26px;
-    transform: rotate(0);
-}
-
-.checkbox .trace:nth-child(2) {
-    top: 46px;
-    transform: rotate(0);
-}
-.checkbox .trace:nth-child(3) {
-    top: 66px;
-    transform: rotate(0);
-}
-
-#toggle {
-    display: none;
-}
-
-/* Menu */
-
-.menu {
-    position: absolute;
-    top: 28px;
-    right: 30px;
-    background-color: transparent;
-    height: 4px;
-    width: 10px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px #ffffff;
-    z-index: -1;
-    transition: 400ms ease-in-out 0s;
-}
-
-.menu-items {
+/* navbar  início*/
+.navbar{
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100vh;
+    padding: 15px 0;
+    background: #484995;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar .max-width{
     display: flex;
-    justify-content: center;
     align-items: center;
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-    transition: 400ms ease-in-out 0s;
+    justify-content: space-between;
 }
-
-.menu-items ul {
-    list-style-type: none;
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
 }
-
-.menu-items ul li a {
-    margin: 10px 0;
-    color: #1E1E2A;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 40px;
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
 }
-
-/* animação do menu */
-
-#toggle:checked + .checkbox .trace:nth-child(1) {
-    transform: rotate(45deg);
-    top: 47px;
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
 }
-
-#toggle:checked + .checkbox .trace:nth-child(2) {
-    transform: translate(-100px);
-    width: 30px;
-    visibility: hidden;
-    opacity: 0;
+/* Home Início */
+.home {
+    display: flex;
+    background-color: #111212;
+    background: url(image/foto.png) no repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
 }
-
-#toggle:checked + .checkbox .trace:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 48px;
-}
-
-#toggle:checked + .checkbox {
-    background-color: #ffffff;
-}
-
-#toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax #ffffff;
-    z-index: 1;
-}
-
-#toggle:checked ~ .menu-items {
-    visibility: visible;
-    opacity: 1;
+.text-3 span{
+    color: #91EEE1;
 }
