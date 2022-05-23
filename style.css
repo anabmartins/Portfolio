@@ -17,6 +17,11 @@
     padding: 30px 0;
     /*background: #484995;*/
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 30px 0;
+    background: #484995;
 }
 .navbar .max-width{
     display: flex;
@@ -27,6 +32,13 @@
     color: #fff;
     font-size: 35px;
     font-weight: 500;
+}
+.navbar .logo a span{
+    color: #91EEE1;
+    transition: all 0.3s ease;
+}
+.navbar .sticky .logo a span{
+    color: #ffffff;
 }
 .navbar .menu li{
     list-style: none;
@@ -40,7 +52,7 @@
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #484995;
+    color: #91EEE1;
 }
 /* Home Início */
 .home {
@@ -67,6 +79,12 @@
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #484995;
+    color: #91EEE1;
     font-weight: 500;
+}
+/* Menu Mobile */
+.menu-btn{
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
 }
