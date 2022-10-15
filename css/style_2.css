@@ -8,3 +8,15 @@
     margin: 15px;
     width: 25%;
 }
+@media screen and
+(min-width: 200px) and
+(max-width: 640px){
+    #site{
+        height: 144vw!important;
+        width: 96vw!important;
+    }
+    .revista{
+        display: column;
+    }
+
+}
