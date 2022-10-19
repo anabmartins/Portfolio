@@ -4,6 +4,10 @@
 .mb-0 {
     font-size: 20px;
 }
+.revista img {
+    margin: 15px;
+    width: 25%;
+}
 @media screen and
 (min-width: 200px) and
 (max-width: 640px){
@@ -11,8 +15,23 @@
         height: 144vw!important;
         width: 96vw!important;
     }
-    .revista{
-        display: column;
+    .revista img{
+        width: 80%!important;
     }
-
+    .cert img{
+        width: 90%;
+        margin: 30px;
+    }
+    .museu img{
+        max-width: 90%;
+        margin: 3px;
+    }
+}
+.cert img{
+    max-width: 900px;
+    margin: 30px;
+}
+.museu img{
+    max-width: 550px;
+    margin: 3px;
 }
